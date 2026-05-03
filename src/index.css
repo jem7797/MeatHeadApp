@@ -32,3 +32,12 @@ body {
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.92);
 }
+
+.support-email-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.support-email-link:hover {
+  text-decoration: underline;
+}

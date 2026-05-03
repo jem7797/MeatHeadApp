@@ -163,6 +163,12 @@ function LandingPage() {
         <RouterLink to="/privacy" className="footer-legal-link">
           Privacy Policy
         </RouterLink>
+        <Text color="whiteAlpha.600" fontSize="sm" aria-hidden>
+          |
+        </Text>
+        <RouterLink to="/support" className="footer-legal-link">
+          Support
+        </RouterLink>
       </Box>
     </Box>
   )

@@ -3,6 +3,7 @@ import LandingPage from './Components/LandingPage'
 import privacyPdf from './assets/MeatHead_PrivacyPolicy (1).pdf'
 import tosPdf from './assets/MeatHead_ToS (2).pdf'
 import LegalDocumentPage from './pages/LegalDocumentPage'
+import SupportPage from './pages/SupportPage'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           path="/privacy"
           element={<LegalDocumentPage src={privacyPdf} title="Privacy Policy" />}
         />
+        <Route path="/support" element={<SupportPage />} />
       </Routes>
     </BrowserRouter>
   )
