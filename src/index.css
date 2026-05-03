@@ -18,3 +18,17 @@ body {
 #root {
   min-height: 100vh;
 }
+
+.footer-legal-link {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-legal-link:hover {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.92);
+}

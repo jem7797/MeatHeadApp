@@ -1,5 +1,6 @@
 import { Box, Text } from "@chakra-ui/react"
 import { useEffect, useRef, useState } from "react"
+import { Link as RouterLink } from "react-router-dom"
 
 type Feature = {
   title: string
@@ -141,7 +142,28 @@ function LandingPage() {
         ))}
       </Box>
 
-      
+      <Box
+        as="footer"
+        mt={{ base: 16, md: 20 }}
+        pt={8}
+        borderTop="1px solid rgba(255, 255, 255, 0.25)"
+        display="flex"
+        flexWrap="wrap"
+        gap={{ base: 4, md: 6 }}
+        justifyContent="center"
+        alignItems="center"
+        pb={2}
+      >
+        <RouterLink to="/tos" className="footer-legal-link">
+          Terms of Service
+        </RouterLink>
+        <Text color="whiteAlpha.600" fontSize="sm" aria-hidden>
+          |
+        </Text>
+        <RouterLink to="/privacy" className="footer-legal-link">
+          Privacy Policy
+        </RouterLink>
+      </Box>
     </Box>
   )
 }
